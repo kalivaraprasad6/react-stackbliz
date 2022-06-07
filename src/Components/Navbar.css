@@ -1,0 +1,43 @@
+.nav_lists {
+  list-style: none;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 1.5rem;
+}
+.nav_lists a {
+  text-decoration: none;
+  color: white;
+}
+
+.navitem {
+  display: flex;
+  flex-direction: row;
+}
+.nav_strip {
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+
+  margin-top: 0%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.G_img {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+}
+.row {
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .nav_lists {
+    display: flex;
+  }
+}
+
