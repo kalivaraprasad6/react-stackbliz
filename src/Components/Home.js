@@ -1,6 +1,6 @@
 import React from 'react';
 import {Carousel} from 'react-bootstrap'
-import '../Components/Images/Art.jpg';
+import Scenary from '../src/Images/Scenary'
 const Home = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Home = () => {
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100"
-      src={Scenary1}
+      src={Scenary}
       alt="First slide"
     />
     <Carousel.Caption>
