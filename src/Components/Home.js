@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import Art from '../Images/Art.jpg';
+import Art from '../src/Images/Art.jpg';
 const Home = () => {
   return (
     <>
