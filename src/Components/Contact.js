@@ -28,13 +28,13 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <label htmlFor="" id="-label">
-              <em> Name </em>
+              <em> Email </em>
             </label>
             <input
               type="text"
-              id="name-input"
+              id="email-input"
               className="form-control"
-              placeholder="Enter Name"
+              placeholder="Enter Email"
               required
             />
           </div>
