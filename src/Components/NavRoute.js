@@ -11,7 +11,7 @@ const NavRoute = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/home" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/collection" exact element={<Art_Collection />} />

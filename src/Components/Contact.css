@@ -1,8 +1,38 @@
 .form-group {
   padding: 10px;
 }
-#name-input {
+
+#name-label {
+  display: flex;
+  font-weight: 500;
 }
-.contact-form {
-  width: 400px;
+#email-label {
+  display: flex;
+  font-weight: 500;
+}
+
+#age-label {
+  display: flex;
+  font-weight: 500;
+}
+#dropdown-label {
+  font-weight: 500;
+}
+#contact-form {
+  background-color: #646fd4;
+  padding: 10px;
+  border-radius: 4px;
+}
+.btn-submit {
+  background-color: #ffff;
+  font-weight: 600;
+  color: black;
+  border-radius: 8px;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  div.col-4 {
+    width: 300px;
+  }
 }
