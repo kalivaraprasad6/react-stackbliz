@@ -19,7 +19,7 @@ const Navbar = () => {
       path: '/Contact',
     },
     {
-      item: 'Ga',
+      item: 'Gallery',
       cName: 'navitem',
       path: '/collection',
     },
