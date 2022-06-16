@@ -21,7 +21,7 @@ const Navbar = () => {
     {
       item: 'Gallery',
       cName: 'navitem',
-      path: '/collection',
+      path: '/Gallery',
     },
   ];
 

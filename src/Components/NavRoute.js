@@ -14,7 +14,7 @@ const NavRoute = () => {
           <Route path="/home" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
-          <Route path="/collection" exact element={<Art_Collection />} />
+          <Route path="/Gallery" exact element={<Art_Collection />} />
         </Routes>
       </BrowserRouter>
     </div>
