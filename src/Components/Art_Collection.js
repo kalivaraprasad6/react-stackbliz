@@ -20,9 +20,21 @@ const Art_Collection = () => {
         <Row>
           <Col>
             <div>
-              <h1 style={{color:'orange', fontWeight:'900', fontSize:'45px' }}> Art Gallery</h1>
-              {arts.map((Element) => {
-                return <img className="G_img" src={Element.url} alt="#" />;
+              <h1
+                style={{ color: 'orange', fontWeight: '900', fontSize: '45px' }}
+              >
+                {' '}
+                Art Gallery
+              </h1>
+              {arts.map((Element, index) => {
+                return (
+                  <img
+                    key={index}
+                    className="G_img"
+                    src={Element.url}
+                    alt="#"
+                  />
+                );
               })}
             </div>
           </Col>
