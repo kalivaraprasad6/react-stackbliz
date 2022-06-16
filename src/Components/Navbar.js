@@ -26,12 +26,12 @@ const Navbar = () => {
   ];
 
   return (
-    <>
+    <div>
       <ul className="nav_strip">
-        {Navdata.map((Element) => {
+        {Navdata.map((Element, index) => {
           return (
             <div className="navbar_items">
-              <li  className="nav_lists">
+              <li className="nav_lists" key={index}>
                 <Link className="navitem" to={Element.path}>
                   {Element.item}
                 </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 };
 export default Navbar;

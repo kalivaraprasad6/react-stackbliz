@@ -1,6 +1,24 @@
 import React from 'react';
 import './Contact.css';
+import { useState } from 'react';
 const Contact = () => {
+  const [contactData, setContactData] = useState({
+    name: '',
+    email: '',
+    age: '',
+    role: '',
+  });
+
+  const { name, email, age, role } = contactData;
+
+  const changeHandler = (e) => {
+    setContactData({ ...contactData, [e.target.name]: [e.target.value] });
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(contactData);
+  };
   return (
     <>
       <div className="container">
@@ -15,7 +33,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-4">
             <p></p>
-            <form action="#" id="contact-form">
+            <form action="#" id="contact-form" onSubmit={submitHandler}>
               <div className="form-group">
                 <label htmlFor="name" id="name-label">
                   <em> Name: </em>
@@ -23,7 +41,10 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name-input"
+                  name="name"
+                  value={name}
                   className="form-control"
+                  onChange={changeHandler}
                   placeholder="Enter Name"
                   required
                 />
@@ -35,6 +56,9 @@ const Contact = () => {
                 <input
                   type="text"
                   id="email-input"
+                  name="email"
+                  value={email}
+                  onChange={changeHandler}
                   className="form-control"
                   placeholder="Enter Email"
                   required
@@ -47,6 +71,9 @@ const Contact = () => {
                 <input
                   type="text"
                   id="age-input"
+                  name="age"
+                  value={age}
+                  onChange={changeHandler}
                   className="form-control"
                   placeholder="Enter Age"
                   min="10"
@@ -61,6 +88,9 @@ const Contact = () => {
                 <select
                   name="dropdown"
                   id="dropdown"
+                  name="role"
+                  value={role}
+                  onChange={changeHandler}
                   className="form-control"
                   required
                 >
@@ -76,6 +106,7 @@ const Contact = () => {
               <button
                 className="btn-submit btn-lg"
                 type="submit"
+                name="submit"
                 id="btn-submit"
               >
                 Submit
