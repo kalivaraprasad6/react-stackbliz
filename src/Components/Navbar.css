@@ -35,9 +35,13 @@
   justify-content: center;
   text-align: center;
 }
-@media (max-width: 650px) {
-  .nav_lists {
+@media only screen and (max-width: 500px) {
+  .nav_strip {
     display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+  }
+  li.nav_lists {
+    margin-left: 10px;
   }
 }
-
