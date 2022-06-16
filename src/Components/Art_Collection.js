@@ -13,7 +13,6 @@ const Art_Collection = () => {
       setArts(response.data);
     });
   }, []);
-
   return (
     <div>
       <Container>
