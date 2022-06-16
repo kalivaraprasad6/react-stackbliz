@@ -25,10 +25,10 @@ const Art_Collection = () => {
                 {' '}
                 Art Gallery
               </h1>
-              {arts.map((Element) => {
+              {arts.map((Element,index) => {
                 return (
                   <img
-                    key={Element.url}
+                    key={index}
                     className="G_img"
                     src={Element.url}
                     alt="#"
