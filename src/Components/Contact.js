@@ -2,6 +2,10 @@ import React from 'react';
 import './Contact.css';
 import { useState } from 'react';
 const Contact = () => {
+  const Dropdown = {
+    dropdownItems: ['Select', 'Full Time Job', 'Learner', 'Student'],
+  };
+
   const [contactData, setContactData] = useState({
     name: '',
     email: '',
@@ -86,7 +90,6 @@ const Contact = () => {
                   <em>Choose best describes your current role?</em>
                 </label>
                 <select
-                  
                   id="dropdown"
                   name="role"
                   value={role}
@@ -94,12 +97,15 @@ const Contact = () => {
                   className="form-control"
                   required
                 >
-                  <option defaultValue value="Select">
+                  {/* <option defaultValue value="Select">
                     Select Current Role
                   </option>
                   <option value="Student">Student</option>
                   <option value="Full Time Job">Full Time Job</option>
-                  <option value="Learner">Learner</option>
+                  <option value="Learner">Learner</option> */}
+                  {Dropdown.dropdownItems.map((Element, index) => (
+                    <option key={index}>{Element}</option>
+                  ))}
                 </select>
               </div>
               <p></p>
