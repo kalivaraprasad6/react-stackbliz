@@ -97,12 +97,6 @@ const Contact = () => {
                   className="form-control"
                   required
                 >
-                  {/* <option defaultValue value="Select">
-                    Select Current Role
-                  </option>
-                  <option value="Student">Student</option>
-                  <option value="Full Time Job">Full Time Job</option>
-                  <option value="Learner">Learner</option> */}
                   {Dropdown.dropdownItems.map((Element, index) => (
                     <option key={index}>{Element}</option>
                   ))}
