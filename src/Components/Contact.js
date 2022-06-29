@@ -1,28 +1,31 @@
 import React from 'react';
 import './Contact.css';
+import Form_HOC from '../HOC/Form_HOC';
 import { useState } from 'react';
-const Contact = () => {
+const Contact = (props) => {
+  const { changeHandler, submitHandler, info } = props;
+  const { email, age, role, name } = info;
   const Dropdown = {
     dropdownItems: ['Select', 'Full Time Job', 'Learner', 'Student'],
   };
 
-  const [contactData, setContactData] = useState({
-    name: '',
-    email: '',
-    age: '',
-    role: '',
-  });
+  // const [contactData, setContactData] = useState({
+  //   name: '',
+  //   email: '',
+  //   age: '',
+  //   role: '',
+  // });
 
-  const { name, email, age, role } = contactData;
+  // const { name, email, age, role } = contactData;
 
-  const changeHandler = (e) => {
-    setContactData({ ...contactData, [e.target.name]: [e.target.value] });
-  };
+  // const changeHandler = (e) => {
+  //   setContactData({ ...contactData, [e.target.name]: [e.target.value] });
+  // };
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    console.log(contactData);
-  };
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
+  //   console.log(contactData);
+  // };
   return (
     <>
       <div className="container">
@@ -118,4 +121,4 @@ const Contact = () => {
     </>
   );
 };
-export default Contact;
+export default Form_HOC(Contact);
