@@ -1,6 +1,11 @@
-.footer{
+.footer {
   background-color: #000;
   padding: 30px;
   margin-top: 40px;
   color: white;
+}
+
+.Container {
+  position: fixed;
+  bottom: 0%;
 }
