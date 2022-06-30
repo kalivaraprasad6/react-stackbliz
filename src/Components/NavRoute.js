@@ -5,7 +5,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Art_Collection from './Art_Collection';
-import Footer from './Footer';
+import Footer from './Footer/Footer.js'
 const NavRoute = () => {
   return (
     <div>
@@ -18,7 +18,7 @@ const NavRoute = () => {
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/Gallery" exact element={<Art_Collection />} />
         </Routes>
-        
+        <Footer/>
       </BrowserRouter>
     </div>
   );
