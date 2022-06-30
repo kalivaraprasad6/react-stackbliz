@@ -11,7 +11,6 @@ const NavRoute = () => {
     <div>
       <BrowserRouter>
         <Navbar />
-
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/home" exact element={<Home />} />
