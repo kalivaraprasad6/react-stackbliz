@@ -7,11 +7,13 @@ import Todos from './Todos';
 import Custom_Hook from './Custom_Hook';
 import Gallery from './Gallery';
 import NavRoute from '../src/Components/NavRoute';
+import Footer from './src/Components/Footer';
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
     <NavRoute />
+    <Footer />
   </StrictMode>
 );
