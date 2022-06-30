@@ -29,12 +29,32 @@ const Footer = () => {
       <div className="footer">
         <Container>
           <Row>
-            <Col></Col>
-            <Col></Col>
-            <Col></Col>
-            <Col></Col>
+            <Col>
+              {footerData.map((Element, index) => {
+                return <p key={index}>{Element.item}</p>;
+              })}
+            </Col>
+            <Col>
+              {' '}
+              {footerData.map((Element, index) => {
+                return <p key={index}>{Element.item}</p>;
+              })}
+            </Col>
+            <Col>
+              {' '}
+              {footerData.map((Element, index) => {
+                return <p key={index}>{Element.item}</p>;
+              })}
+            </Col>
+            <Col>
+              {' '}
+              {footerData.map((Element, index) => {
+                return <p key={index}>{Element.item}</p>;
+              })}
+            </Col>
           </Row>
         </Container>
+        <hr/>
       </div>
     </div>
   );
