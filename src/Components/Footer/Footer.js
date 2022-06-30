@@ -35,26 +35,24 @@ const Footer = () => {
               })}
             </Col>
             <Col>
-              {' '}
               {footerData.map((Element, index) => {
                 return <p key={index}>{Element.item}</p>;
               })}
             </Col>
             <Col>
-              {' '}
               {footerData.map((Element, index) => {
                 return <p key={index}>{Element.item}</p>;
               })}
             </Col>
             <Col>
-              {' '}
               {footerData.map((Element, index) => {
                 return <p key={index}>{Element.item}</p>;
               })}
             </Col>
           </Row>
         </Container>
-        <hr/>
+        <hr />
+        <p style={{ textAlign: 'center' }}>Help & Support</p>
       </div>
     </div>
   );
