@@ -30,7 +30,7 @@ const Navbar = () => {
       <ul className="nav_strip">
         {Navdata.map((Element, index) => {
           return (
-            <div key={index}className="navbar_items">
+            <div key={index} className="navbar_items">
               <li className="nav_lists">
                 <Link className="navitem" to={Element.path}>
                   {Element.item}
