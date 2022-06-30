@@ -18,6 +18,7 @@ const NavRoute = () => {
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/Gallery" exact element={<Art_Collection />} />
         </Routes>
+        
       </BrowserRouter>
     </div>
   );
